@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/happy-womens-day/static/css/main.3f399a37.css",
+    "main.js": "/happy-womens-day/static/js/main.e41f19cd.js",
+    "static/js/453.5e6c9fe9.chunk.js": "/happy-womens-day/static/js/453.5e6c9fe9.chunk.js",
+    "static/media/4.jpg": "/happy-womens-day/static/media/4.7fc3446a64bd06601ce8.jpg",
+    "static/media/3.jpg": "/happy-womens-day/static/media/3.5e05d226e294c3219461.jpg",
+    "static/media/2.jpg": "/happy-womens-day/static/media/2.a3a7b70ef92a213884fa.jpg",
+    "static/media/1.jpg": "/happy-womens-day/static/media/1.5f5410c3f336a9b9131f.jpg",
+    "index.html": "/happy-womens-day/index.html",
+    "main.3f399a37.css.map": "/happy-womens-day/static/css/main.3f399a37.css.map",
+    "main.e41f19cd.js.map": "/happy-womens-day/static/js/main.e41f19cd.js.map",
+    "453.5e6c9fe9.chunk.js.map": "/happy-womens-day/static/js/453.5e6c9fe9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f399a37.css",
+    "static/js/main.e41f19cd.js"
+  ]
+}
