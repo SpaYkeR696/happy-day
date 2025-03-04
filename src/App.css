@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #ffe5e5;
+  color: #333;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+  overflow-x: hidden; /* Для предотвращения горизонтальной прокрутки */
+}
+
+.app {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+}
+
+.app-header {
+  padding: 20px;
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  color: #ff4d4d;
+  margin-bottom: 20px;
+}
+
+.app-header p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Слайдер с изображениями */
+.image-slider {
+  position: relative;
+  margin-bottom: 20px; /* Добавляем отступ снизу */
+  overflow: hidden; /* Обрезаем лишние части изображения */
+}
+
+.slider-image {
+  max-width: 100%; /* Ограничиваем ширину изображения */
+  height: auto; /* Сохраняем пропорции */
+  border-radius: 10px; /* Добавляем скругление углов */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Добавляем тень */
+  display: block; /* Убираем лишнее пространство под изображением */
+  margin: 0 auto; /* Центрируем изображение */
+  max-height: 300px; /* Ограничиваем максимальную высоту */
+  object-fit: cover; /* Масштабируем изображение без искажений */
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.slider-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.slider-prev {
+  left: 10px;
+}
+
+.slider-next {
+  right: 10px;
+}
+/* Декоративные элементы */
+.decorations {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.confetti {
+  font-size: 2rem;
+  animation: float 5s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateY(-20px) rotate(360deg);
   }
+  100% {
+    transform: translateY(0) rotate(720deg);
+  }
+}
+
+/* Сердечки */
+.heart-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.heart {
+  font-size: 2rem;
+  color: #ff4d4d;
+  animation: heartbeat 2s infinite ease-in-out;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Футер */
+footer {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 20px; /* Добавляем отступ сверху */
+
 }
